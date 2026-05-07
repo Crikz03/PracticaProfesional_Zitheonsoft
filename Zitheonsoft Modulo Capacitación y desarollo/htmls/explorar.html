@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Cursos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/explorar.css">
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nombre app</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mi_aprendizaje.html">Mi Aprendizaje</a>
+            <a href="explorar.html" class="active">Explorar</a>
+            <a href="#">Mi ruta</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell"></i></button>
+            <div class="avatar" title="Perfil de usuario">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" placeholder="Buscar cursos...">
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="explore-filters">
+            <button class="explore-filter-btn active">Todos</button>
+            <button class="explore-filter-btn">Técnicos</button>
+            <button class="explore-filter-btn">Liderazgo</button>
+            <button class="explore-filter-btn">Soft Skills</button>
+            <button class="explore-filter-btn">Cumplimiento</button>
+            <button class="explore-filter-btn">Nuevo</button>
+            <button class="explore-filter-btn">Popular</button>
+        </div>
+
+        <!-- Catalog Grid -->
+        <div class="catalog-grid">
+            <!-- Card 1 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-laptop-code fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-database fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-chart-line fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-users-cog fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-cloud fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-shield-alt fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-code-branch fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='inscripcion_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="catalog-card">
+                <div class="catalog-img">
+                    <i class="fas fa-brain fa-3x" style="color: white; opacity: 0.9;"></i>
+                </div>
+                <div class="catalog-content">
+                    <h3 class="catalog-title">Nombre curso</h3>
+                    <div class="catalog-meta">
+                        • 16 horas • 234 inscritos<br>
+                        • 4.8/5.0 • Técnico, Análisis
+                    </div>
+                    <div class="catalog-price">$0</div>
+                    <button class="btn" style="width: auto; margin: 0 auto; display: block;" onclick="window.location.href='detalle_curso.html'">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-show-more" style="display: block; margin: 2rem auto 0; width: fit-content;">Mostrar más</button>
+
+    </main>
+
+</body>
+</html>

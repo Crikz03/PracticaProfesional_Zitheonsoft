@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al Curso</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/detalle_curso.css">
+    <style>
+        .price-badge {
+            background-color: white;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .price-badge span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-top: 0.25rem;
+        }
+        .icon-syllabus {
+            background-color: #f1f5f9;
+            color: var(--primary-blue);
+            border: 1px solid #cbd5e1;
+        }
+        .module-item:hover {
+            background-color: #f8fafc;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nombre app</div>
+        <div class="header-back-link">
+            <a href="explorar.html">Volver a Explorar</a>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell"></i></button>
+            <div class="avatar" title="Perfil de usuario">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="course-hero-info">
+                <h1>Nombre curso</h1>
+                <div class="course-hero-meta">
+                    16 horas <span>•</span> 6 módulos <span>•</span> Certificado incluido
+                </div>
+                <div class="course-hero-instructor">
+                    Instructor: Ing. Roberto Sánchez &nbsp;•&nbsp; 234 inscritos &nbsp;•&nbsp; 4.8/5.0
+                </div>
+            </div>
+            <div class="price-badge">
+                $0
+                <span>Gratis por tu plan</span>
+            </div>
+        </section>
+
+        <!-- Course Content (Syllabus) -->
+        <section class="course-modules">
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0; color: #333;">Temario del Curso</h2>
+            </div>
+
+            <div class="modules-container">
+                <!-- Module 1 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-file-video"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">1. Introducción al tema</div>
+                        <div class="module-meta">Video • 15 min</div>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-file-video"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">2. Conceptos Fundamentales</div>
+                        <div class="module-meta">Video + Quiz • 45 min</div>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-file-video"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">3. Aplicación Práctica</div>
+                        <div class="module-meta">Video + Práctica • 60 min</div>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-file-video"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">4. Casos de Estudio</div>
+                        <div class="module-meta">Video + Ejercicios • 90 min</div>
+                    </div>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-file-alt"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">5. Proyecto Final</div>
+                        <div class="module-meta">Práctica • 75 min</div>
+                    </div>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module-item">
+                    <div class="module-icon icon-syllabus">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">6. Evaluación de Conocimientos</div>
+                        <div class="module-meta">Evaluación Final • 60 min</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Bar -->
+        <div class="action-bar">
+            <button class="btn-primary-large" onclick="window.location.href='detalle_curso.html'">
+                <i class="fas fa-sign-in-alt"></i> Inscribirme Ahora
+            </button>
+            <button class="btn-secondary-large">
+                <i class="far fa-heart"></i> Añadir a favoritos
+            </button>
+        </div>
+
+        <!-- Reviews -->
+        <section class="recent-activity">
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0; color: #333; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-star" style="color: #f59e0b;"></i> Reseñas del Curso
+                </h2>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-avatar" style="background-color: #10b981;">AM</div>
+                <div class="activity-content">
+                    <h4>Ana Martínez</h4>
+                    <div class="activity-time" style="color: #f59e0b;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span style="color: var(--text-muted); margin-left: 0.5rem;">Hace 2 días</span>
+                    </div>
+                    <div class="activity-text">
+                        El material es de excelente calidad y el instructor explica todo de manera muy clara. ¡Recomendado 100%!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

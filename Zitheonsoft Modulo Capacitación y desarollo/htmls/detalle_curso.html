@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Curso</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/detalle_curso.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nombre app</div>
+        <div class="header-back-link">
+            <a href="mi_aprendizaje.html">Volver a Mi Aprendizaje</a>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell"></i></button>
+            <div class="avatar" title="Perfil de usuario">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-hero">
+            <div class="course-hero-info">
+                <h1>Nombre curso</h1>
+                <div class="course-hero-meta">
+                    8 horas <span>•</span> 6 módulos <span>•</span> Certificado incluido
+                </div>
+                <div class="course-hero-instructor">
+                    Instructor: Ing. Roberto Sánchez &nbsp;•&nbsp; 234 inscritos &nbsp;•&nbsp; 4.8/5.0
+                </div>
+            </div>
+            <div class="circular-progress">
+                <div class="progress-value">
+                    45%
+                    <span class="progress-label">Tu Progreso</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido curso -->
+        <section class="course-modules">
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0; color: #333;">Contenido del Curso</h2>
+            </div>
+
+            <div class="modules-container">
+                <!-- Module 1 -->
+                <div class="module-item">
+                    <div class="module-icon icon-completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">1. Nombre modulo</div>
+                        <div class="module-meta">Video • 15 min • Completado</div>
+                    </div>
+                    <div class="module-status status-green">100%</div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-item">
+                    <div class="module-icon icon-completed">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">2. Nombre modulo</div>
+                        <div class="module-meta">Video + Quiz • 45 min • Completado</div>
+                    </div>
+                    <div class="module-status status-green">100%</div>
+                </div>
+
+                <!-- Module 3 (Active) -->
+                <div class="module-item active">
+                    <div class="module-icon icon-active">
+                        <i class="fas fa-play" style="font-size: 0.8rem; margin-left: 2px;"></i>
+                    </div>
+                    <div class="module-info">
+                        <div class="module-title">3. Nombre modulo</div>
+                        <div class="module-meta">Video + Práctica • 60 min • En progreso</div>
+                    </div>
+                    <div class="module-status status-blue">45%</div>
+                </div>
+
+                <!-- Module 4 (Locked) -->
+                <div class="module-item">
+                    <div class="module-icon icon-locked"></div>
+                    <div class="module-info">
+                        <div class="module-title">4. Nombre modulo</div>
+                        <div class="module-meta">Video + Ejercicios • 90 min • Bloqueado</div>
+                    </div>
+                    <div class="module-status status-locked"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <!-- Module 5 (Locked) -->
+                <div class="module-item">
+                    <div class="module-icon icon-locked"></div>
+                    <div class="module-info">
+                        <div class="module-title">5. Nombre modulo</div>
+                        <div class="module-meta">Video + Práctica • 75 min • Bloqueado</div>
+                    </div>
+                    <div class="module-status status-locked"><i class="fas fa-lock"></i></div>
+                </div>
+
+                <!-- Module 6 (Locked) -->
+                <div class="module-item">
+                    <div class="module-icon icon-locked"></div>
+                    <div class="module-info">
+                        <div class="module-title">6. Nombre modulo</div>
+                        <div class="module-meta">Evaluación Final • 60 min • Bloqueado</div>
+                    </div>
+                    <div class="module-status status-locked"><i class="fas fa-lock"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Bar -->
+        <div class="action-bar">
+            <button class="btn-primary-large">
+                <i class="fas fa-play"></i> Continuar Módulo 3
+            </button>
+            <button class="btn-secondary-large">
+                <i class="fas fa-book-reader"></i> Materiales
+            </button>
+        </div>
+
+        <!-- Recent Activity -->
+        <section class="recent-activity">
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0; color: #333; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="far fa-comment-dots" style="color: #9ca3af;"></i> Actividad Reciente
+                </h2>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-avatar">JG</div>
+                <div class="activity-content">
+                    <h4>Juan Gonzalez</h4>
+                    <div class="activity-time">Hace 2 horas</div>
+                    <div class="activity-text">
+                        Excelente cursos sobre tablas dinámicas. Los ejercicios prácticos fueron muy útiles
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../js/detalle_curso.js"></script>
+</body>
+</html>

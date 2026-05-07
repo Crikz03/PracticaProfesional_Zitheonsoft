@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aprendizaje - Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mi_aprendizaje.css">
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nombre app</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mi_aprendizaje.html" class="active">Mi Aprendizaje</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="#">Mi ruta</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell"></i></button>
+            <div class="avatar" title="Perfil de usuario">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filters -->
+        <div class="filters-container">
+            <button class="filter-btn active">En Progreso (8)</button>
+            <button class="filter-btn">Por Iniciar (5)</button>
+            <button class="filter-btn">Completados (24)</button>
+            <button class="filter-btn">Obligatorios</button>
+        </div>
+
+        <!-- Course List -->
+        <div class="course-list-wrapper">
+            <!-- Item 1 -->
+            <div class="course-list-item">
+                <div class="course-list-info">
+                    <div class="course-list-title">Nombre curso</div>
+                    <div class="course-list-progress-bar">
+                        <div class="course-list-progress-fill fill-blue" style="width: 45%;"></div>
+                    </div>
+                    <div class="course-list-meta">
+                        45% completado • Módulo 3 de 6 • Vence: 28 May 2026
+                    </div>
+                </div>
+                <div class="course-list-actions">
+                    <span class="status-badge badge-blue">En Progreso</span>
+                    <button class="btn" style="width: auto;" onclick="window.location.href='detalle_curso.html?source=aprendizaje'">Continuar</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="course-list-item">
+                <div class="course-list-info">
+                    <div class="course-list-title">Nombre curso</div>
+                    <div class="course-list-progress-bar">
+                        <div class="course-list-progress-fill fill-blue" style="width: 25%;"></div>
+                    </div>
+                    <div class="course-list-meta">
+                        25% completado • Módulo 2 de 8 • Vence: 30 May 2026
+                    </div>
+                </div>
+                <div class="course-list-actions">
+                    <span class="status-badge badge-blue">En Progreso</span>
+                    <button class="btn" style="width: auto;" onclick="window.location.href='detalle_curso.html?source=aprendizaje'">Continuar</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="course-list-item">
+                <div class="course-list-info">
+                    <div class="course-list-title">Nombre curso</div>
+                    <div class="course-list-progress-bar">
+                        <div class="course-list-progress-fill fill-blue" style="width: 80%;"></div>
+                    </div>
+                    <div class="course-list-meta">
+                        80% completado • Módulo 4 de 5 • Vence: 20 May 2026
+                    </div>
+                </div>
+                <div class="course-list-actions">
+                    <span class="status-badge badge-yellow">Obligatorio</span>
+                    <button class="btn" style="width: auto;" onclick="window.location.href='detalle_curso.html?source=aprendizaje'">Continuar</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="course-list-item">
+                <div class="course-list-info">
+                    <div class="course-list-title">Nombre curso</div>
+                    <div class="course-list-progress-bar">
+                        <div class="course-list-progress-fill fill-blue" style="width: 60%;"></div>
+                    </div>
+                    <div class="course-list-meta">
+                        60% completado • Módulo 3 de 5 • Vence: 10 May 2026
+                    </div>
+                </div>
+                <div class="course-list-actions">
+                    <span class="status-badge badge-blue">En Progreso</span>
+                    <button class="btn" style="width: auto;" onclick="window.location.href='detalle_curso.html?source=aprendizaje'">Continuar</button>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="course-list-item">
+                <div class="course-list-info">
+                    <div class="course-list-title">Nombre curso</div>
+                    <div class="course-list-progress-bar">
+                        <div class="course-list-progress-fill fill-red" style="width: 10%;"></div>
+                    </div>
+                    <div class="course-list-meta">
+                        10% completado • Módulo 1 de 3 • Vence: 27 Mar 2026 <i class="fas fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="course-list-actions">
+                    <span class="status-badge badge-red">Por vencer</span>
+                    <button class="btn" style="width: auto;" onclick="window.location.href='detalle_curso.html?source=aprendizaje'">Continuar</button>
+                </div>
+            </div>
+
+            <button class="btn btn-show-more">Mostrar más</button>
+        </div>
+
+        <!-- Próximas Sesiones Presenciales -->
+        <section class="upcoming-sessions">
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0;">Próximas Sesiones Presenciales</h2>
+            </div>
+
+            <div class="sessions-list">
+                <!-- Session 1 -->
+                <div class="session-item">
+                    <div>
+                        <div class="session-title">Nombre de sesion</div>
+                        <div class="session-meta">
+                            Sala de Conferencias A • 25 Feb 2026, 10:00 - 13:00 • Instructor: Lic. María González
+                        </div>
+                    </div>
+                    <button class="btn" style="width: auto;">Ver Detalles</button>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="session-item">
+                    <div>
+                        <div class="session-title">Nombre de sesion</div>
+                        <div class="session-meta">
+                            Lab de Cómputo 2 • 27 Feb 2026, 14:00 - 18:00 • Instructor: Ing. Roberto Sánchez
+                        </div>
+                    </div>
+                    <button class="btn" style="width: auto;">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
