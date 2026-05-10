@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Automatización</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-mode">
+
+    <header class="admin-header">
+        <div class="logo">Nombre app <br> <span style="font-size: 0.9rem; font-weight: 500;">admin</span></div>
+        <nav>
+            <a href="admin_inicio.html">Inicio</a>
+            <a href="admin_automatizacion.html" class="active">Automatización</a>
+            <a href="admin_analytics.html">Analytics</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell" style="color: #fbbf24;"></i></button>
+            <div class="avatar" title="Perfil de usuario" style="background-color: #4b5563;">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="admin-controls-row" style="margin-bottom: 0;">
+            <div>
+                <h1 class="admin-page-title">Reglas de Asignación Automática</h1>
+                <p class="admin-page-subtitle">Configura reglas para asignar cursos automáticamente según rol, departamento, antigüedad u otros criterios.</p>
+            </div>
+            <button class="btn-admin-primary">+ Nueva Regla</button>
+        </div>
+
+        <div class="rules-container">
+            <!-- Rule 1 -->
+            <div class="rule-card">
+                <div class="rule-info">
+                    <h3>🆕 Onboarding - Todos los Nuevos Empleados</h3>
+                    <div class="rule-details">
+                        <p><span>Trigger:</span> Al contratar nuevo empleado</p>
+                        <p><span>Acción:</span> Asignar 5 cursos obligatorios (Bienvenida, Cultura, Ciberseguridad, GDPR, Acoso Laboral)</p>
+                        <p><span>Plazo:</span> Completar en primeros 30 días</p>
+                    </div>
+                </div>
+                <div class="rule-actions">
+                    <span class="status-pill status-activa">Activa</span>
+                    <button class="btn-outline-blue">Editar</button>
+                </div>
+            </div>
+
+            <!-- Rule 2 -->
+            <div class="rule-card">
+                <div class="rule-info">
+                    <h3>👔 Gerentes y Managers - Liderazgo</h3>
+                    <div class="rule-details">
+                        <p><span>Trigger:</span> Cuando rol = "Manager" O rol = "Gerente"</p>
+                        <p><span>Acción:</span> Asignar ruta "Desarrollo de Liderazgo" (8 cursos)</p>
+                        <p><span>Plazo:</span> Completar en 6 meses</p>
+                    </div>
+                </div>
+                <div class="rule-actions">
+                    <span class="status-pill status-activa">Activa</span>
+                    <button class="btn-outline-blue">Editar</button>
+                </div>
+            </div>
+
+            <!-- Rule 3 -->
+            <div class="rule-card">
+                <div class="rule-info">
+                    <h3>💻 Departamento IT - Ciberseguridad Avanzada</h3>
+                    <div class="rule-details">
+                        <p><span>Trigger:</span> Departamento = "Tecnología" O Departamento = "IT"</p>
+                        <p><span>Acción:</span> Asignar "Ciberseguridad Avanzada", "GDPR para IT", "DevSecOps"</p>
+                        <p><span>Plazo:</span> Renovación anual</p>
+                    </div>
+                </div>
+                <div class="rule-actions">
+                    <span class="status-pill status-activa">Activa</span>
+                    <button class="btn-outline-blue">Editar</button>
+                </div>
+            </div>
+
+            <!-- Rule 4 -->
+            <div class="rule-card">
+                <div class="rule-info">
+                    <h3>📅 Renovación Anual - Cumplimiento Normativo</h3>
+                    <div class="rule-details">
+                        <p><span>Trigger:</span> Cada 365 días desde última certificación</p>
+                        <p><span>Acción:</span> Re-asignar cursos de cumplimiento (Ciberseguridad, GDPR, Acoso Laboral)</p>
+                        <p><span>Plazo:</span> 60 días para completar</p>
+                    </div>
+                </div>
+                <div class="rule-actions">
+                    <span class="status-pill status-activa">Activa</span>
+                    <button class="btn-outline-blue">Editar</button>
+                </div>
+            </div>
+
+            <!-- Rule 5 -->
+            <div class="rule-card">
+                <div class="rule-info">
+                    <h3>🎯 Promoción a Senior - Habilidades Avanzadas</h3>
+                    <div class="rule-details">
+                        <p><span>Trigger:</span> Cuando nivel cambia a "Senior"</p>
+                        <p><span>Acción:</span> Asignar cursos técnicos avanzados según especialidad</p>
+                        <p><span>Plazo:</span> 90 días</p>
+                    </div>
+                </div>
+                <div class="rule-actions">
+                    <span class="status-pill status-prueba">En Prueba</span>
+                    <button class="btn-outline-blue">Editar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-btn-container">
+            <button class="btn-admin-primary">Mostrar más</button>
+        </div>
+
+        <div class="admin-section-header">
+            <h2>Actividad Reciente</h2>
+        </div>
+        
+        <div class="activity-list">
+            <div class="activity-item-admin">
+                <h4>3 nuevos empleados contratados</h4>
+                <p>Se asignaron automáticamente 5 cursos de onboarding a cada uno • Hace 2 horas</p>
+            </div>
+            <div class="activity-item-admin">
+                <h4>María Sánchez promovida a Manager</h4>
+                <p>Se activó ruta "Desarrollo de Liderazgo" (8 cursos) • Hace 5 horas</p>
+            </div>
+            <div class="activity-item-admin">
+                <h4>156 empleados: renovación anual de cumplimiento</h4>
+                <p>Re-asignación automática de cursos de seguridad y GDPR • Hace 1 día</p>
+            </div>
+        </div>
+
+        <!-- Modal para Nueva Regla -->
+        <div id="modal-regla" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" onclick="cerrarModal()">&times;</button>
+                <h2 class="modal-title">Configurar Nueva Regla</h2>
+                
+                <form id="form-regla" onsubmit="event.preventDefault(); cerrarModal();">
+                    <div class="form-group">
+                        <label for="regla-nombre">Nombre de la Regla</label>
+                        <input type="text" id="regla-nombre" placeholder="Ej. Onboarding Ventas" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regla-trigger">Condición (Trigger)</label>
+                        <select id="regla-trigger" required>
+                            <option value="">Selecciona un evento...</option>
+                            <option value="contratacion">Al contratar nuevo empleado</option>
+                            <option value="cambio_rol">Cuando cambie de rol</option>
+                            <option value="anual">Renovación anual obligatoria</option>
+                            <option value="departamento">Por departamento</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regla-accion">Acción (Cursos a asignar)</label>
+                        <select id="regla-accion" multiple style="height: 100px;" required>
+                            <option value="c1">Ciberseguridad Básica</option>
+                            <option value="c2">Liderazgo Efectivo</option>
+                            <option value="c3">Cultura Organizacional</option>
+                            <option value="c4">Prevención de Acoso</option>
+                        </select>
+                        <small style="color: #6b7280; font-size: 0.8rem;">Mantén presionado Ctrl (Windows) o Cmd (Mac) para seleccionar varios</small>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="regla-plazo">Plazo límite (Días)</label>
+                            <input type="number" id="regla-plazo" placeholder="Ej. 30" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="regla-estado">Estado</label>
+                            <select id="regla-estado">
+                                <option value="activa">Activa</option>
+                                <option value="prueba">En Prueba</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-actions" style="margin-top: 1rem;">
+                        <button type="button" class="btn-secondary" onclick="cerrarModal()">Cancelar</button>
+                        <button type="submit" class="btn-admin-primary">Crear Regla</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

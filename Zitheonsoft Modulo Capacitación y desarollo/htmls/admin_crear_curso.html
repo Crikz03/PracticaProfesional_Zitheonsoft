@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Crear Curso</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-mode">
+
+    <header class="admin-header">
+        <div class="logo">Nombre app <br> <span style="font-size: 0.9rem; font-weight: 500;">admin</span></div>
+        <nav>
+            <a href="admin_inicio.html" class="active">Inicio</a>
+            <a href="admin_automatizacion.html">Automatización</a>
+            <a href="admin_analytics.html">Analytics</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell" style="color: #fbbf24;"></i></button>
+            <div class="avatar" title="Perfil de usuario" style="background-color: #4b5563;">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <div style="margin-bottom: 2rem;">
+            <a href="admin_inicio.html" style="color: var(--primary-blue); text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-arrow-left"></i> Volver a la lista de cursos
+            </a>
+        </div>
+
+        <h1 class="admin-page-title" style="text-align: center; margin-bottom: 2rem;">Crear Nuevo Curso</h1>
+
+        <div class="admin-form-container">
+            <form id="crear-curso-form" onsubmit="event.preventDefault(); window.location.href='admin_inicio.html';">
+                
+                <div class="form-group">
+                    <label for="titulo">Título del Curso</label>
+                    <input type="text" id="titulo" placeholder="Ej. Liderazgo Efectivo y Gestión de Equipos" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="instructor">Instructor</label>
+                        <input type="text" id="instructor" placeholder="Nombre del instructor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duracion">Duración (Horas)</label>
+                        <input type="number" id="duracion" placeholder="Ej. 12" required min="1">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" rows="4" placeholder="Escribe un resumen detallado de lo que aprenderán en este curso..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="estado">Estado Inicial</label>
+                        <select id="estado">
+                            <option value="activo">Activo (Visible)</option>
+                            <option value="borrador" selected>Borrador (Oculto)</option>
+                            <option value="archivado">Archivado</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria">
+                            <option value="habilidades">Habilidades Blandas</option>
+                            <option value="tecnologia">Tecnología / IT</option>
+                            <option value="negocios">Negocios</option>
+                            <option value="onboarding">Onboarding</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Imagen de Portada</label>
+                    <div class="file-upload-box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p style="font-weight: 500; color: #374151; margin-bottom: 0.25rem;">Haz clic o arrastra una imagen aquí</p>
+                        <p style="font-size: 0.8rem; color: #9ca3af;">PNG, JPG hasta 5MB (Recomendado 800x600px)</p>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="window.location.href='admin_inicio.html'">Cancelar</button>
+                    <button type="submit" class="btn-admin-primary">Guardar y Continuar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
