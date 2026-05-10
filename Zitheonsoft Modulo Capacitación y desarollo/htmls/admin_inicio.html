@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Lista de Cursos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-mode">
+
+    <header class="admin-header">
+        <div class="logo">Nombre app <br> <span style="font-size: 0.9rem; font-weight: 500;">admin</span></div>
+        <nav>
+            <a href="admin_inicio.html" class="active">Inicio</a>
+            <a href="admin_automatizacion.html">Automatización</a>
+            <a href="admin_analytics.html">Analytics</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell" style="color: #fbbf24;"></i></button>
+            <div class="avatar" title="Perfil de usuario" style="background-color: #4b5563;">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="admin-search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar cursos registrados...">
+        </div>
+
+        <div class="admin-controls-row" style="justify-content: center; margin-bottom: 1rem;">
+            <div class="admin-filters">
+                <div class="filter-pill active">Todos</div>
+                <div class="filter-pill">Activos</div>
+                <div class="filter-pill">Borradores</div>
+                <div class="filter-pill">Archivados</div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+            <button class="btn-admin-primary" onclick="window.location.href='admin_crear_curso.html'">+ Crear Curso</button>
+        </div>
+
+        <div class="admin-table-container">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Nombre del Curso</th>
+                        <th>Inscritos</th>
+                        <th>Completados</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Excel Avanzado para Análisis de Datos</td>
+                        <td>234</td>
+                        <td>187 (80%)</td>
+                        <td><span class="status-pill status-activa">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Liderazgo Efectivo y Gestión de Equipos</td>
+                        <td>189</td>
+                        <td>145 (77%)</td>
+                        <td><span class="status-pill status-activa">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ciberseguridad Básica</td>
+                        <td>567</td>
+                        <td>534 (94%)</td>
+                        <td><span class="status-pill status-activa">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Análisis de Datos con Python</td>
+                        <td>156</td>
+                        <td>89 (57%)</td>
+                        <td><span class="status-pill status-prueba">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Proyectos Ágiles (Scrum)</td>
+                        <td>0</td>
+                        <td>0 (0%)</td>
+                        <td><span class="status-pill status-borrador">Borrador</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comunicación Asertiva en el Trabajo</td>
+                        <td>342</td>
+                        <td>298 (87%)</td>
+                        <td><span class="status-pill status-activa">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Power BI para Analistas de Negocio</td>
+                        <td>278</td>
+                        <td>187 (67%)</td>
+                        <td><span class="status-pill status-prueba">Activo</span></td>
+                        <td class="action-icons">
+                            <i class="fas fa-pencil-alt" style="color: #fbbf24;"></i>
+                            <i class="fas fa-trash" style="color: #9ca3af;"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="center-btn-container">
+            <button class="btn-admin-primary">Mostrar más</button>
+        </div>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

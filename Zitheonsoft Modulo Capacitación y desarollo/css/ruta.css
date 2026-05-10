@@ -1,0 +1,278 @@
+/* === MI RUTA (Perfil del Usuario) === */
+
+/* Banner de Perfil */
+.profile-banner {
+    background-color: #fbcbcb; /* Salmón claro */
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #3b82f6; /* Azul brillante */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.profile-info h1 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.25rem;
+}
+
+.profile-info p {
+    font-size: 0.9rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.25rem;
+}
+
+.profile-info .profile-meta {
+    font-size: 0.85rem;
+    color: #4b5563;
+}
+
+/* Métricas del Perfil */
+.ruta-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ruta-metric-card {
+    background-color: #f3f4f6; /* Gris muy claro */
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ruta-metric-icon {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+}
+
+.ruta-metric-title {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Matriz de Habilidades */
+.skills-matrix {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    gap: 1.5rem;
+}
+
+.skill-row:last-child {
+    margin-bottom: 0;
+}
+
+.skill-label {
+    width: 150px;
+    font-size: 0.9rem;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.skill-bar-container {
+    flex-grow: 1;
+    background-color: #e5e7eb;
+    height: 32px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* Colores de las barras */
+.bar-dark-blue { background-color: #0f4a8a; } /* Avanzado */
+.bar-light-blue { background-color: #3b82f6; } /* Intermedio Alto */
+.bar-salmon { background-color: #fca5a5; } /* Intermedio */
+.bar-light-salmon { background-color: #fecaca; } /* Basico-Intermedio */
+.bar-pale-salmon { background-color: #fee2e2; color: #b91c1c; } /* En desarrollo - texto oscuro */
+
+/* Certificaciones */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cert-card {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.cert-icon-text {
+    font-size: 1.75rem;
+    color: #4b5563;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.cert-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+/* Plan de Desarrollo */
+.dev-plan-container {
+    background: white;
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dev-plan-header {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.dev-plan-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.dev-plan-row:last-child {
+    margin-bottom: 0;
+}
+
+.dev-phase-title {
+    font-weight: 700;
+    color: #374151;
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.dev-phase-courses {
+    color: #6b7280;
+    font-size: 0.85rem;
+    flex: 2;
+    text-align: center;
+}
+
+.dev-phase-status {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    min-width: 120px;
+}
+
+.badge-blue {
+    background-color: #bfdbfe;
+    color: #1e3a8a;
+}
+
+.badge-light-blue {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.badge-salmon {
+    background-color: #fecaca;
+    color: #991b1b;
+}
+
+@media (max-width: 1024px) {
+    .certs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ruta-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .certs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skill-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .skill-bar-container {
+        width: 100%;
+    }
+    .dev-plan-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .dev-phase-courses {
+        text-align: left;
+    }
+    .dev-phase-status {
+        justify-content: flex-start;
+    }
+}

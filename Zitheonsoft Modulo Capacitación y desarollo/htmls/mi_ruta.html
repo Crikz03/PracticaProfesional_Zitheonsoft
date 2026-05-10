@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Ruta de Aprendizaje</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ruta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nombre app</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="mi_aprendizaje.html">Mi Aprendizaje</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="mi_ruta.html" class="active">Mi ruta</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell"></i></button>
+            <div class="avatar" title="Perfil de usuario">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner de Perfil -->
+        <section class="profile-banner">
+            <div class="profile-avatar">JG</div>
+            <div class="profile-info">
+                <h1>Joana García</h1>
+                <p>Analista de Datos • Departamento: Tecnología</p>
+                <div class="profile-meta">
+                    Ingreso: Ene 2023 • joana.garcia@ejemplo.com • Manager asignado: Ing. Roberto Sánchez
+                </div>
+            </div>
+        </section>
+
+        <!-- Métricas -->
+        <section class="ruta-metrics">
+            <div class="ruta-metric-card">
+                <i class="fas fa-check-circle ruta-metric-icon"></i>
+                <div class="ruta-metric-title">Cursos Completados</div>
+            </div>
+            <div class="ruta-metric-card">
+                <i class="fas fa-spinner ruta-metric-icon"></i>
+                <div class="ruta-metric-title">En Progreso</div>
+            </div>
+            <div class="ruta-metric-card">
+                <i class="fas fa-clock ruta-metric-icon"></i>
+                <div class="ruta-metric-title">Horas de Aprendizaje</div>
+            </div>
+            <div class="ruta-metric-card">
+                <i class="fas fa-certificate ruta-metric-icon"></i>
+                <div class="ruta-metric-title">Certificaciones</div>
+            </div>
+        </section>
+
+        <!-- Matriz de Habilidades -->
+        <section>
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0;">Matriz de Habilidades</h2>
+            </div>
+            
+            <div class="skills-matrix">
+                <div class="skill-row">
+                    <div class="skill-label">Excel Avanzado</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill bar-dark-blue" style="width: 85%;">Avanzado</div>
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <div class="skill-label">Análisis de Datos</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill bar-light-blue" style="width: 70%;">Intermedio-Alto</div>
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <div class="skill-label">Power BI</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill bar-salmon" style="width: 55%;">Intermedio</div>
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <div class="skill-label">Python</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill bar-light-salmon" style="width: 40%;">Básico-Intermedio</div>
+                    </div>
+                </div>
+                
+                <div class="skill-row">
+                    <div class="skill-label">Liderazgo</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill bar-pale-salmon" style="width: 25%;">En Desarrollo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificaciones -->
+        <section>
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0;">Certificaciones Obtenidas</h2>
+            </div>
+            
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon-text">Icono</div>
+                    <div class="cert-title">Excel Avanzado</div>
+                    <div class="cert-date">Dic 2025</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-text">Icono</div>
+                    <div class="cert-title">Ciberseguridad</div>
+                    <div class="cert-date">Nov 2025</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-text">Icono</div>
+                    <div class="cert-title">Power BI Básico</div>
+                    <div class="cert-date">Oct 2025</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-text">Icono</div>
+                    <div class="cert-title">Comunicación</div>
+                    <div class="cert-date">Sep 2025</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon-text">Icono</div>
+                    <div class="cert-title">Prev. Acoso</div>
+                    <div class="cert-date">Ago 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan de Desarrollo -->
+        <section>
+            <div class="section-header-line">
+                <h2 class="section-title" style="margin-bottom: 0;">Plan de Desarrollo Profesional</h2>
+            </div>
+            
+            <div class="dev-plan-container">
+                <div class="dev-plan-header">
+                    Objetivo: Senior Data Analyst (12-18 meses)
+                </div>
+                
+                <div class="dev-plan-row">
+                    <div class="dev-phase-title">Fase 1: Dominio de Herramientas de Análisis</div>
+                    <div class="dev-phase-courses">Excel Avanzado ✓ • Power BI ✓ • SQL (en progreso)</div>
+                    <div class="dev-phase-status">
+                        <span class="status-badge badge-blue">75% Completado</span>
+                    </div>
+                </div>
+                
+                <div class="dev-plan-row">
+                    <div class="dev-phase-title">Fase 2: Programación y Automatización</div>
+                    <div class="dev-phase-courses">Python para Análisis • R Básico • VBA Avanzado</div>
+                    <div class="dev-phase-status">
+                        <span class="status-badge badge-light-blue">En Progreso</span>
+                    </div>
+                </div>
+                
+                <div class="dev-plan-row">
+                    <div class="dev-phase-title">Fase 3: Habilidades Blandas y Liderazgo</div>
+                    <div class="dev-phase-courses">Liderazgo de Proyectos • Comunicación Ejecutiva</div>
+                    <div class="dev-phase-status">
+                        <span class="status-badge badge-salmon">Pendiente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Plataforma de Capacitación</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-mode">
+
+    <div class="login-container">
+        <!-- Lado Izquierdo: Imagen y Mensaje -->
+        <div class="login-left">
+            <div class="login-left-content">
+                <h1>Impulsa tu Desarrollo Profesional</h1>
+                <p>Accede a la plataforma de capacitación y descubre todas las herramientas, cursos y rutas de aprendizaje diseñadas para potenciar tu talento dentro de la organización.</p>
+            </div>
+        </div>
+
+        <!-- Lado Derecho: Formulario de Login -->
+        <div class="login-right">
+            <div class="login-form-wrapper">
+                <div class="login-logo">Nombre app</div>
+                <h2>Bienvenido de nuevo</h2>
+                <p class="subtitle">Ingresa tus credenciales para continuar</p>
+
+                <form onsubmit="event.preventDefault(); window.location.href='index.html';">
+                    <div class="form-group">
+                        <label for="email">Correo Corporativo</label>
+                        <input type="email" id="email" placeholder="ejemplo@empresa.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="login-options">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500; cursor: pointer;">
+                            <input type="checkbox" style="width: auto; margin: 0;"> Recordarme
+                        </label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="btn-login">Iniciar Sesión</button>
+                    
+                    <div style="margin-top: 2rem; text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+                        ¿Eres administrador? <a href="admin_inicio.html" style="color: var(--primary-blue); font-weight: 600;">Entrar al panel admin</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
