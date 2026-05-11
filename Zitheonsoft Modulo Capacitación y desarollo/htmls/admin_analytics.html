@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Analytics</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-mode">
+
+    <header class="admin-header">
+        <div class="logo">Nombre app <br> <span style="font-size: 0.9rem; font-weight: 500;">admin</span></div>
+        <nav>
+            <a href="admin_inicio.html">Inicio</a>
+            <a href="admin_automatizacion.html">Automatización</a>
+            <a href="admin_analytics.html" class="active">Analytics</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" aria-label="Notificaciones"><i class="fas fa-bell" style="color: #fbbf24;"></i></button>
+            <div class="avatar" title="Perfil de usuario" style="background-color: #4b5563;">JG</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Header con Botón de Reporte -->
+        <div class="admin-controls-row" style="margin-bottom: 2rem;">
+            <h1 class="admin-page-title" style="margin-bottom: 0;">Tablero de Analíticas</h1>
+            <button class="btn-admin-primary" onclick="abrirReporte()"><i class="fas fa-download" style="margin-right: 0.5rem;"></i> Generar Reporte</button>
+        </div>
+
+        <!-- Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <i class="fas fa-check-circle metric-icon"></i>
+                <div class="metric-title">Tasa Finalización</div>
+                <div class="metric-trend trend-up"><i class="fas fa-arrow-up"></i> +5% vs mes anterior</div>
+            </div>
+            <div class="metric-card">
+                <i class="fas fa-clock metric-icon"></i>
+                <div class="metric-title">Horas Totales</div>
+                <div class="metric-trend trend-up"><i class="fas fa-arrow-up"></i> +12% vs mes anterior</div>
+            </div>
+            <div class="metric-card">
+                <i class="fas fa-users metric-icon"></i>
+                <div class="metric-title">Participación Activa</div>
+                <div class="metric-trend trend-neutral"><i class="fas fa-arrow-right"></i> Sin cambios</div>
+            </div>
+            <div class="metric-card">
+                <i class="fas fa-star metric-icon"></i>
+                <div class="metric-title">Satisfacción (⭐)</div>
+                <div class="metric-trend trend-up"><i class="fas fa-arrow-up"></i> +0.2 vs mes anterior</div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-grid">
+            <!-- Populares -->
+            <div class="chart-card">
+                <h3 class="chart-title">Cursos Más Populares</h3>
+                
+                <div class="bar-row bar-blue">
+                    <div class="bar-label">Ciberseguridad</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 100%;">567</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-blue">
+                    <div class="bar-label">Comunicación</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 60%;">342</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-blue">
+                    <div class="bar-label">Power BI</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 49%;">278</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-blue">
+                    <div class="bar-label">Excel Avanzado</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 41%;">234</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-blue">
+                    <div class="bar-label">Liderazgo</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 33%;">189</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="chart-card">
+                <h3 class="chart-title">🎯 Habilidades Más Desarrolladas</h3>
+                
+                <div class="bar-row bar-green">
+                    <div class="bar-label">Análisis de Datos</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 100%;">456</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-green">
+                    <div class="bar-label">Comunicación</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 87%;">398</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-green">
+                    <div class="bar-label">Liderazgo</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 75%;">342</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-green">
+                    <div class="bar-label">Gestión de Proyectos</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 63%;">289</div>
+                    </div>
+                </div>
+                
+                <div class="bar-row bar-green">
+                    <div class="bar-label">Excel</div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 58%;">267</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compliance -->
+        <div class="admin-section-header">
+            <h2>Estado de Cumplimiento Normativo</h2>
+        </div>
+        
+        <div class="compliance-list">
+            <div class="compliance-item">
+                <div class="comp-info">
+                    <h4>Ciberseguridad Básica</h4>
+                    <p>Cumplimiento: 98% (556/567)</p>
+                </div>
+                <div class="comp-status">Vence: Anual</div>
+            </div>
+            <div class="compliance-item">
+                <div class="comp-info">
+                    <h4>Prevención de Acoso Laboral</h4>
+                    <p>Cumplimiento: 95% (1,185/1,248)</p>
+                </div>
+                <div class="comp-status">Vence: Anual</div>
+            </div>
+            <div class="compliance-item">
+                <div class="comp-info">
+                    <h4>Protección de Datos (GDPR)</h4>
+                    <p>Cumplimiento: 87% (1,086/1,248)</p>
+                </div>
+                <div class="comp-status text-orange">162 pendientes</div>
+            </div>
+            <div class="compliance-item">
+                <div class="comp-info">
+                    <h4>Seguridad en el Trabajo</h4>
+                    <p>Cumplimiento: 72% (899/1,248)</p>
+                </div>
+                <div class="comp-status text-red">349 pendientes</div>
+            </div>
+        </div>
+
+        <!-- Rendimiento por Departamento -->
+        <div class="admin-section-header">
+            <h2>Rendimiento por Departamento</h2>
+        </div>
+        
+        <div class="admin-table-container">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>Empleados</th>
+                        <th>Cursos Completados</th>
+                        <th>Horas Promedio</th>
+                        <th>Tasa Finalización</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: #333; font-weight: 500;">Tecnología</td>
+                        <td style="color: #333;">187</td>
+                        <td style="color: #333;">1,456</td>
+                        <td style="color: #333;">12.3h</td>
+                        <td class="text-green">92%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #333; font-weight: 500;">Ventas</td>
+                        <td style="color: #333;">234</td>
+                        <td style="color: #333;">1,789</td>
+                        <td style="color: #333;">10.8h</td>
+                        <td class="text-green">89%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #333; font-weight: 500;">Marketing</td>
+                        <td style="color: #333;">145</td>
+                        <td style="color: #333;">1,123</td>
+                        <td style="color: #333;">11.2h</td>
+                        <td class="text-green">88%</td>
+                    </tr>
+                    <tr>
+                        <td style="color: #333; font-weight: 500;">Operaciones</td>
+                        <td style="color: #333;">312</td>
+                        <td style="color: #333;">2,234</td>
+                        <td style="color: #333;">9.1h</td>
+                        <td class="text-orange">78%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modal de Reporte -->
+        <div id="modal-reporte" class="modal-overlay">
+            <div class="modal-content" style="max-width: 700px;">
+                <button class="modal-close" onclick="cerrarReporte()">&times;</button>
+                <h2 class="modal-title">Previsualización del Reporte Mensual</h2>
+                
+                <div style="background: #f9fafb; padding: 1.5rem; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid #d1d5db; padding-bottom: 1rem;">
+                        <div>
+                            <h3 style="color: #1f2937; margin-bottom: 0.5rem;">Reporte Consolidado de Capacitación</h3>
+                            <p style="color: #6b7280; font-size: 0.85rem;">Período: Últimos 30 días</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="background: #3b82f6; color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; display: inline-block;">Logo empresa</div>
+                        </div>
+                    </div>
+                    
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-bottom: 1rem;">
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem 0; color: #4b5563;">Cursos Activos en Plataforma</td>
+                            <td style="padding: 0.75rem 0; font-weight: 600; text-align: right;">45</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem 0; color: #4b5563;">Empleados Activos</td>
+                            <td style="padding: 0.75rem 0; font-weight: 600; text-align: right;">1,248</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem 0; color: #4b5563;">Tasa Global de Finalización</td>
+                            <td style="padding: 0.75rem 0; font-weight: 600; text-align: right; color: #16a34a;">89%</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem 0; color: #4b5563;">Horas de Aprendizaje Invertidas</td>
+                            <td style="padding: 0.75rem 0; font-weight: 600; text-align: right;">12,500 h</td>
+                        </tr>
+                    </table>
+                    
+                    <div style="font-size: 0.85rem; color: #6b7280; font-style: italic; text-align: center;">
+                        *El documento final generado incluirá los gráficos de barras, métricas detalladas y el desglose competencial por departamentos en formato visual.
+                    </div>
+                </div>
+
+                <div class="form-actions" style="margin-top: 1rem; justify-content: space-between;">
+                    <button class="btn-secondary" onclick="cerrarReporte()"><i class="fas fa-cog"></i> Ajustar Filtros</button>
+                    <div style="display: flex; gap: 1rem;">
+                        <button class="btn-outline-blue" onclick="alert('Descargando CSV...'); cerrarReporte();"><i class="fas fa-file-csv"></i> Descargar CSV</button>
+                        <button class="btn-admin-primary" onclick="alert('Generando PDF...'); cerrarReporte();"><i class="fas fa-file-pdf"></i> Exportar a PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
